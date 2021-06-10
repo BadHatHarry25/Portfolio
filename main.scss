@@ -1,22 +1,33 @@
+@import "./base";
+@import "./components";
+@import "./layout";
+
 .navbar-expand-sm {
     font-size: 40px;
 }
 
 .navbar-brand {
     font-size: 40px !important;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 150px;
+    color: #ED0F0F !important;
 }
 
 .navbar-collapse {
-
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 60px;
+    font-family: 'Reem Kufi', sans-serif;
+
 }
 
 .navbar-collapse a {
-    margin-right: 20px;
+    margin-right: 90px;
+    color: white !important;
+
 }
 
 .navbar-collapse span {
-    font-size: 100px;
+    color: #ED0F0F;
+    font-family: 'Dancing Script', cursive;
 }
