@@ -1,5 +1,7 @@
 .navbar-expand-sm {
   font-size: 40px;
+  border-bottom: 1px solid white;
+  background-color: black !important;
 }
 
 .navbar-brand {
@@ -22,6 +24,23 @@
 }
 
 .navbar-collapse span {
+  color: #ED0F0F;
+  font-family: "Dancing Script", cursive;
+}
+
+.intro {
+  color: white;
+  background-color: black;
+  height: 800px;
+  padding-left: 200px;
+  padding-top: 300px;
+}
+
+.heading {
+  font-size: 72px;
+}
+
+.intro_name span {
   color: #ED0F0F;
   font-family: "Dancing Script", cursive;
 }

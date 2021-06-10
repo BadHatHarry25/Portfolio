@@ -4,13 +4,15 @@
 
 .navbar-expand-sm {
     font-size: 40px;
+    border-bottom: 1px solid white;
+    background-color: ;
 }
 
 .navbar-brand {
-    font-size: 40px !important;
+    font-size: 40px;
     font-family: 'Dancing Script', cursive;
     margin-left: 150px;
-    color: #ED0F0F !important;
+    color: #ED0F0F;
 }
 
 .navbar-collapse {
@@ -18,16 +20,31 @@
     justify-content: flex-end;
     margin-right: 60px;
     font-family: 'Reem Kufi', sans-serif;
-
 }
 
 .navbar-collapse a {
     margin-right: 90px;
-    color: white !important;
-
+    color: white;
 }
 
 .navbar-collapse span {
+    color: #ED0F0F;
+    font-family: 'Dancing Script', cursive;
+}
+
+.intro {
+    color: white;
+    background-color: black;
+    height: 800px;
+    padding-left: 200px;
+    padding-top: 300px;
+}
+
+.heading {
+    font-size: 72px;
+}
+
+.intro_name span {
     color: #ED0F0F;
     font-family: 'Dancing Script', cursive;
 }
