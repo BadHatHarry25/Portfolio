@@ -1,0 +1,21 @@
+.navbar-expand-sm {
+  font-size: 40px;
+}
+
+.navbar-brand {
+  font-size: 40px !important;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.navbar-collapse a {
+  margin-right: 20px;
+}
+
+.navbar-collapse span {
+  font-size: 100px;
+}
