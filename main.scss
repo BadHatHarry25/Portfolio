@@ -7,10 +7,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(44, 42, 42);
+    background-color: black;
 }
 
-// navbar styles
+// navbar styles rgb(44, 42, 42)
 
 .navbar-expand-sm {
     font-size: 40px;
@@ -27,6 +27,9 @@ body {
     font-family: 'Shadows Into Light', cursive;
     margin-left: 150px;
     color: #ED0F0F !important;
+}
+
+.navbar-brand:hover {
     border-bottom: 1px solid rgb(242, 239, 232);
 }
 
@@ -52,23 +55,26 @@ body {
     font-family: 'Shadows Into Light', cursive;
 }
 
+.navbar-toggler {
+    background-color: #F88F55;
+}
+
 // landing page styles
 
 .intro {
     color: white;
-    background-color: rgb(44, 42, 42);
-    height: 530px;
+    background-color: black;
+    height: 600px;
     padding-left: 200px;
     padding-top: 250px;
 }
 
-.change:hover .intro {
-    background-color: black;
-}
+// .change:hover .intro {background-color: black;}
 
-.change:hover {
-    background-color: black;
-}
+
+
+
+
 
 
 .heading {
@@ -81,6 +87,32 @@ body {
     font-family: 'Shadows Into Light', cursive;
 }
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media screen and (max-width: 570px) {
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .navbar-collapse a {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .intro {
+        padding-left: 20px;
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 // About section styles 
 
 .about {
@@ -89,12 +121,9 @@ body {
 }
 
 .about_heading {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid black;
+    text-align: center;
     padding-bottom: 10px;
-    margin-left: 600px;
-    margin-right: 600px;
+
     font-size: 60px;
     font-family: 'Almarai', sans-serif;
 }
@@ -123,21 +152,40 @@ body {
     font-size: 20px;
 }
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media screen and (max-width: 570px) {
+
+
+    .about {
+        height: 800px;
+    }
+
+    .about_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img {
+        margin-bottom: 20px;
+    }
+
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 // portfolio section styles
 
 .port {
-    height: 650px;
-    background-color: rgb(44, 42, 42);
+    height: 1200px;
+    background-color: black;
 }
 
 .port_heading {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: rgb(242, 239, 232);
-    border-bottom: 1px solid rgb(242, 239, 232);
     padding-bottom: 10px;
-    margin-left: 600px;
-    margin-right: 600px;
+
     font-size: 60px;
     font-family: 'Almarai', sans-serif;
 }
@@ -151,6 +199,8 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgb(242, 239, 232);
 }
 
 .port_main_img {
@@ -171,10 +221,12 @@ body {
 
 .port_main_name {
     color: rgb(242, 239, 232);
+    margin-bottom: 20px;
 }
 
 .port_main_para {
     color: rgb(242, 239, 232);
+    margin-bottom: 40px;
 }
 
 .btn-warning {
@@ -185,4 +237,112 @@ body {
 
 .btn-warning:hover {
     background-color: #ED0F0F;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media screen and (max-width: 570px) {
+
+    .port_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .port_main_para {
+        margin-bottom: 10px;
+    }
+
+    .btn-warning {
+        margin-top: 40px;
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// contact section styles
+
+.contact {
+    height: 650px;
+    background-color: black;
+}
+
+.contact_heading {
+    text-align: center;
+    color: rgb(242, 239, 232);
+
+    padding-bottom: 10px;
+
+    font-size: 60px;
+    font-family: 'Almarai', sans-serif;
+    padding-top: 50px;
+}
+
+.contact_heading span {
+    color: #ED0F0F;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.contact_form {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(242, 239, 232);
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.form_inputs {
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.form_message {
+    height: 100px;
+}
+
+.form_label {
+    font-size: 30px;
+}
+
+// footer styles
+
+.foot {
+    padding-bottom: 50px;
+}
+
+.foot_heading {
+    color: #ED0F0F;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foot_link {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: rgb(242, 239, 232);
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .contact_form {
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    .form_inputs {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+
 }
