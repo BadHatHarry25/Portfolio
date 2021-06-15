@@ -3,22 +3,30 @@
 @import "./layout";
 
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-}
+
 
 // navbar styles rgb(44, 42, 42)
 
-.navbar-expand-sm {
+.navbar-expand-xl {
     font-size: 40px;
     border-bottom: 1px solid white;
     background-color: rgb(44, 42, 42) !important;
 }
 
-.navbar-expand-sm:hover {
+@media screen and (max-width: 1200px) {
+
+    .navbar-brand {
+        margin-left: 100px;
+    }
+
+    .navbar-toggler {
+        margin-right: 100px;
+    }
+}
+
+
+
+.navbar-expand-xl:hover {
     background-color: black !important;
 }
 
@@ -148,8 +156,9 @@ body {
 .about_para {
     height: 350px;
     width: 350px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 20px;
+    font-family: 'Almarai', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
 }
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
